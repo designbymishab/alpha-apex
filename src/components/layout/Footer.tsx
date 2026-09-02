@@ -36,9 +36,18 @@ export function Footer() {
         <div className="w-full pt-8 border-t border-white/5 flex flex-col-reverse md:flex-row items-center justify-between gap-8">
           <div className="flex items-center gap-4">
             <Image src="/images/fevicon/android-chrome-192x192.png" alt="Alpha Mark" width={16} height={16} className="opacity-30" />
-            <p className="text-[var(--text-muted)] text-[10px] uppercase tracking-[0.2em] text-center md:text-left">
-              © {currentYear} Alpha Apex Advisory Service. All rights reserved.
-            </p>
+            <div className="flex flex-col md:flex-row items-center md:items-center gap-1 md:gap-0 text-center md:text-left">
+              <p className="text-[var(--text-muted)] text-[10px] uppercase tracking-[0.2em]">
+                © {currentYear} Alpha Apex Advisory Service. All rights reserved.
+              </p>
+              <span className="hidden md:inline text-[var(--text-muted)] text-[10px] mx-2 opacity-40">·</span>
+              <a
+                href="https://eclyze-website.vercel.app"
+                className="text-[10px] uppercase tracking-[0.2em] text-[var(--text-muted)] opacity-60 hover:text-[var(--accent)] hover:opacity-100 transition-all duration-300"
+              >
+                Website by Eclyze
+              </a>
+            </div>
           </div>
           
           <div className="flex flex-wrap justify-center gap-8">
